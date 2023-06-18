@@ -22,7 +22,7 @@ Initially, it seemed like it might be possible to just send the LLM the text of 
 
 On June 13th, [OpenAI announced a huge update to the chat completions API - function calling!]( https://openai.com/blog/function-calling-and-other-api-updates) This means we can provide the chat model with a function, and the chat model will output a JSON object according to that function's parameters. For our Stable Diffusion prompts, we need structured data that strictly adheres to certain rules - a function is perfect for that! Let's take a look at one of the functions we used:
 
-```json
+```
 get_visual_description_function = [{
     'name': 'get_passage_setting',
     'description': 'Generate and describe the visuals of a passage in a book. Visuals only, no characters, plot, or people.',
