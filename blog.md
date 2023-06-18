@@ -33,7 +33,7 @@ In essence, function calling is a way to bridge the gap between unstructured lan
 
 For our Stable Diffusion prompts, we need structured data that strictly adheres to certain rules - a function is perfect for that! Let's take a look at one of the functions we used:
 
-```json
+```
 get_visual_description_function = [{
     'name': 'get_passage_setting',
     'description': 'Generate and describe the visuals of a passage in a book. Visuals only, no characters, plot, or people.',
